@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'Muller';
+	font-family: 'MullerLight';
 	src: url('../fonts/MullerLight.woff2') format('woff2'),
 		url('../fonts/MullerLight.woff') format('woff');
 	font-display: swap;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-	font-family: 'Muller';
+	font-family: 'MullerRegular';
 	src: url('../fonts/MullerRegular.woff2') format('woff2'),
 		url('../fonts/MullerRegular.woff') format('woff');
 	font-display: swap;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-	font-family: 'Muller';
+	font-family: 'MullerBold';
 	src: url('../fonts/MullerBold.woff2') format('woff2'),
 		url('../fonts/MullerBold.woff') format('woff');
 	font-display: swap;
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-	font-family: 'Muller';
+	font-family: 'MullerMedium';
 	src: url('../fonts/MullerMedium.woff2') format('woff2'),
 		url('../fonts/MullerMedium.woff') format('woff');
 	font-display: swap;
@@ -36,6 +36,7 @@
 
 * {
 	box-sizing: border-box;
+	margin: 0px;
 }
 .body{
 	max-width: 1200px;
@@ -43,7 +44,7 @@
 	padding-right: 15px;
 	margin: 0 auto;
     background-color: #E5E5E5;
-    font-family: Muller;
+    font-family: 'MullerRegular';
     font-size: 16px;
 }
 a{
@@ -57,61 +58,163 @@ ul{
 img{
 	max-width: 100%;
 }
-.nav-logo{
-	margin-right: auto;
-}
 .nav-header{
 	display: flex;
 	align-items: center;
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
-.nav{
-	display: flex;
-}
 .nav-header-left{
-	margin-right: 550px;
+	margin-left: 40px;
+	margin-right: auto;
+	color: #666666;
+	font-family: 'MullerMedium';
+	font-size: 20px;
+	line-height: 20px;
+}
+.nav-header-right{
+	background: url(/img/личныйкабинет.svg) no-repeat left center transparent;
+	background-position-y: -4px;
+	padding-left: 30px;
+	color: #CC9933;
+	line-height: 16px;
+}
+.container-header{
+	border: 1px;
+	border-radius: 15px;
+	background: #FFFFFF;
+	width: 1170px;
+	height: 70px;
+	padding-left: 45px;
+	padding-right: 45px;
+	margin-bottom: 45px;
 }
 .nav-container{
 	display: flex;
 }
-.container-header{
-	margin-bottom: 45px;
-}
 .nav-list{
 	display: flex;
 	margin-right: auto;
+	padding-top: 27px;
+}
+.list:not(:last-child){
+	margin-right: 45px;
+}
+.nav-info{
+	color: #666666;
 }
 .nav-list-right{
 	display: flex;
+	padding-top: 13px;
 }
-.nav-info:last-child{
-	margin-right: 45px;
+.list-right:not(:last-child){
+	margin-right: 40px;
 }
 .list-right{
-	margin-right: 40px;
+	padding: 13px 20px;
+	border-radius: 10px;
+	border: 1px solid #CC9933;
+	color: #CC9933;
+	background-color: #FFFFFF;
 }
 
 /* БЛОК СПЕЦПРЕДЛОЖЕНИЙ */
 
 .Offers{
+	margin-left: 40px;
 	margin-bottom: 20px;
+	font-size: 40px;
+	line-height: 40px;
 }
 .special-offer{
 	display: flex;
 	justify-content: space-between;
 }
-.right-offer{
-	margin: auto;
-}
 .block-offer{
 	margin-bottom: 190px;
+}
+
+/* карточки мальдивы и остров крит */
+.special-offer-1{
+	width: 573px;
+	border-radius: 15px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 23px;
+	background: url(/img/c1maldiv.jpg) no-repeat center transparent;
+}
+.special-offer-2{
+	width: 573px;
+	border-radius: 15px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	background: url(/img/c2krit.jpg) no-repeat center transparent;
+}
+.offer-name{
+	width: 299px;
+	margin-bottom: 15px;
+	padding-top: 40px;
+	font-family: 'MullerBold';
+	font-size: 40px;
+	line-height: 40px;
+	color: #FFFFFF;
+}
+.offer-price{
+	margin-bottom: 47px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+.offer-detailed{
+	line-height: 16px;
+	color: #FFCC66;
+	background: url(/img/стрелподроб.svg) no-repeat right center transparent;
+	padding-right: 15px;
+}
+
+/* карточка люкс номеров */
+.special-offer-3{
+	width: 573px;
+	border-radius: 15px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	background: url(/img/c3lux.jpg) no-repeat center transparent;
+}
+.offer-name-right{
+	width: 299px;
+	margin-bottom: 15px;
+	padding-top: 211px;
+	font-family: 'MullerBold';
+	font-size: 60px;
+	line-height: 60px;
+	color: #FFFFFF;
+}
+.offer-price-right{
+	margin-bottom: 47px;
+	font-size: 30px;
+	line-height: 30px;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+.offer-detailed-right{
+	line-height: 16px;
+	color: #FFCC66;
+	background: url(/img/стрелподроб.svg) no-repeat right center transparent;
+	padding-right: 15px;
 }
 
 /* БЛОК О НАС */
 
 .about-us{
+	margin-left: 40px;
 	margin-bottom: 11px;
+	font-size: 40px;
+	line-height: 40px;
+}
+.description{
+	width: 888px;
+	line-height: 32px;
 }
 .block-about-us{
 	margin-bottom: 45px;
@@ -120,24 +223,62 @@ img{
 /* БЛОК УСЛУГИ */
 
 .services{
+	margin-left: 40px;
 	margin-bottom: 20px;
+	font-size: 40px;
+	line-height: 40px;
 }
 .list-services{
 	display: flex;
 	flex-wrap: wrap;
 }
 .list-services-1{
+	margin-right: 23px;
+	margin-bottom: 23px;
 	width: 573px;
+	height: 100%;
+	background: url(/img/услуги1.jpg) no-repeat top;
+	border-radius: 15px;
 }
 .list-services-2{
 	width: 573px;
-	
+	height: 100%;
+	background: url(/img/услуги2.jpg) no-repeat top;
+	border-radius: 15px;
 }
 .list-services-3{
+	margin-right: 23px;
+	margin-bottom: 23px;
 	width: 573px;
+	height: 100%;
+	background: url(/img/услуги3.jpg) no-repeat top;
+	border-radius: 15px;
 }
 .list-services-4{
 	width: 573px;
+	height: 100%;
+	background: url(/img/услуги4.jpg) no-repeat top;
+	border-radius: 15px;
+}
+.services-cell{
+	margin-top: 165px;
+	padding-top: 25px;
+	padding-left: 45px;
+	padding-bottom: 50px;
+	background-color: #FFFFFF;
+}
+.list-services-name{
+	font-size: 20px;
+	line-height: 40px;
+	font-family: 'MullerMedium';
+	background: url(/img/стрелуслуги.svg) no-repeat right center transparent;
+	padding-right: 15px;
+	color: #CC9933;
+}
+.list-services-description{
+	width: 402px;
+	line-height: 32px;
+	color: #000000;
 }
 .block-services{
 	margin-bottom: 45px;
@@ -146,46 +287,193 @@ img{
 /* БЛОК ПРЕИМУЩЕСТВА */
 
 .advantages{
+	margin-left: 40px;
 	margin-bottom: 30px;
+	font-size: 40px;
+	line-height: 40px;
 }
 .list-advantages{
 	display: flex;
 	flex-wrap: wrap;
 }
-.list-advantages-1{
+.list-advantages-block{
+	margin-right: 23px;
+	margin-bottom: 23px;
 	width: 275px;
+	border-radius: 15px;
+	background-color: #FFFFFF;
 }
-.list-advantages-2{
+/* создал отдельный класс так как не могу для каждого 4 списка отменить правый марджин */
+.list-advantages-block-notmargin{
+	margin-bottom: 23px;
 	width: 275px;
+	border-radius: 15px;
+	background-color: #FFFFFF;
 }
-.list-advantages-3{
-	width: 275px;
+.advantages-description-1{
+	padding-top: 106px;
+	padding-left: 45px;
+	padding-bottom: 41px;
+	width: 240px;
+	font-size: 16px;
+	line-height: 32px;
+	background: url(/img/п1.svg) no-repeat;
+	background-position-y: 30px;
+	background-position-x: 45px;
 }
-.list-advantages-4{
-	width: 275px;
+.advantages-description-2{
+	padding-top: 106px;
+	padding-left: 45px;
+	padding-bottom: 41px;
+	width: 240px;
+	font-size: 16px;
+	line-height: 32px;
+	background: url(/img/п2.svg) no-repeat;
+	background-position-y: 30px;
+	background-position-x: 45px;
 }
-.list-advantages-5{
-	width: 275px;
+.advantages-description-3{
+	padding-top: 106px;
+	padding-left: 45px;
+	padding-bottom: 41px;
+	width: 240px;
+	font-size: 16px;
+	line-height: 32px;
+	background: url(/img/п3.svg) no-repeat;
+	background-position-y: 30px;
+	background-position-x: 45px;
 }
-.list-advantages-6{
-	width: 275px;
+.advantages-description-4{
+	padding-top: 106px;
+	padding-left: 45px;
+	padding-bottom: 41px;
+	width: 240px;
+	font-size: 16px;
+	line-height: 32px;
+	background: url(/img/п4.svg) no-repeat;
+	background-position-y: 30px;
+	background-position-x: 45px;
 }
-.list-advantages-7{
-	width: 275px;
+.advantages-description-5{
+	padding-top: 106px;
+	padding-left: 45px;
+	padding-bottom: 41px;
+	width: 240px;
+	font-size: 16px;
+	line-height: 32px;
+	background: url(/img/п5.svg) no-repeat;
+	background-position-y: 30px;
+	background-position-x: 45px;
 }
-.list-advantages-8{
-	width: 275px;
+.advantages-description-6{
+	padding-top: 106px;
+	padding-left: 45px;
+	padding-bottom: 41px;
+	width: 240px;
+	font-size: 16px;
+	line-height: 32px;
+	background: url(/img/п6.svg) no-repeat;
+	background-position-y: 30px;
+	background-position-x: 45px;
+}
+.advantages-description-7{
+	padding-top: 106px;
+	padding-left: 45px;
+	padding-bottom: 41px;
+	width: 240px;
+	font-size: 16px;
+	line-height: 32px;
+	background: url(/img/п7.svg) no-repeat;
+	background-position-y: 30px;
+	background-position-x: 45px;
+}
+.advantages-description-8{
+	padding-top: 106px;
+	padding-left: 45px;
+	padding-bottom: 41px;
+	width: 240px;
+	font-size: 16px;
+	line-height: 32px;
+	background: url(/img/п8.svg) no-repeat;
+	background-position-y: 30px;
+	background-position-x: 45px;
 }
 .block-advantages{
-	margin-bottom: 45px;
+	margin-bottom: 22px;
 }
 
 /* БЛОК РАЗМЕЩЕНИЕ */
 
 .placement{
+	margin-left: 40px;
 	margin-bottom: 30px;
+	font-size: 40px;
+	line-height: 40px;
 }
 .list-placement{
 	display: flex;
 	flex-wrap: wrap;
+}
+.list-placement-1{
+	margin-right: 23px;
+	margin-bottom: 23px;
+	width: 374px;
+	background-color: #FFFFFF;
+}
+/* создал отдельный класс чтобы убрать правый марджин */
+.list-placement-right{
+	margin-bottom: 23px;
+	width: 374px;
+	background-color: #FFFFFF;
+}
+/* создал отдельный класс чтобы убрать нижний марджин */
+.list-placement-bottom{
+	margin-right: 23px;
+	width: 374px;
+	background-color: #FFFFFF;
+}
+.list-placement-price{
+	padding-left: 45px;
+	padding-top: 30px;
+	margin-bottom: 16px;
+}
+.star{
+	padding-left: 44px;
+}
+.list-placement-name{
+	padding-left: 45px;
+	margin-bottom: 16px;
+	line-height: 16px;
+	color: #000000;
+}
+.list-placement-location{
+	padding-left: 45px;
+	margin-bottom: 20px;
+	line-height: 16px;
+	color: #999999;
+}
+.list-placement-btn{
+	margin-left: 45px;
+	margin-bottom: 34px;
+	padding: 15px 20px;
+	border-radius: 10px;
+	border: 1px solid #CC9933;
+	background-color: #FFFFFF;
+	color: #CC9933;
+}
+.list-placement-options{
+	padding-top: 373px;
+	width: 373px;
+	height: 440px;
+	border-radius: 15px;
+	background: url(/img/р9.jpg) no-repeat transparent center;
+}
+.all-options{
+	padding-left: 54px;
+	padding-right: 20px;
+	font-size: 20px;
+	line-height: 40px;
+	font-family: 'MullerMedium';
+	color: #FFFFFF;
+	background: url(/img/р9стрел.svg) no-repeat transparent right;
 }
