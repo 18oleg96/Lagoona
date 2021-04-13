@@ -39,9 +39,7 @@
 	margin: 0px;
 }
 .body{
-	max-width: 1200px;
-	padding-left: 15px;
-	padding-right: 15px;
+	max-width: 1170px;
 	margin: 0 auto;
     background-color: #E5E5E5;
     font-family: 'MullerRegular';
@@ -83,8 +81,8 @@ img{
 	border: 1px;
 	border-radius: 15px;
 	background: #FFFFFF;
-	width: 1170px;
-	height: 70px;
+	width: 100%;
+	height: 100%;
 	padding-left: 45px;
 	padding-right: 45px;
 	margin-bottom: 45px;
@@ -94,8 +92,12 @@ img{
 }
 .nav-list{
 	display: flex;
+	align-items: center;
 	margin-right: auto;
-	padding-top: 27px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-right: 1px solid #E1E1E1;
+	padding-right: 56px;
 }
 .list:not(:last-child){
 	margin-right: 45px;
@@ -111,6 +113,7 @@ img{
 	margin-right: 40px;
 }
 .list-right{
+	margin-bottom: 10px;
 	padding: 13px 20px;
 	border-radius: 10px;
 	border: 1px solid #CC9933;
@@ -136,7 +139,8 @@ img{
 
 /* карточки мальдивы и остров крит */
 .special-offer-1{
-	width: 573px;
+	width: 200%;
+	max-width: 573px;
 	border-radius: 15px;
 	padding-left: 40px;
 	padding-bottom: 40px;
@@ -144,14 +148,16 @@ img{
 	background: url(/img/c1maldiv.jpg) no-repeat center transparent;
 }
 .special-offer-2{
-	width: 573px;
+	width: 200%;
+	max-width: 573px;
 	border-radius: 15px;
 	padding-left: 40px;
 	padding-bottom: 40px;
 	background: url(/img/c2krit.jpg) no-repeat center transparent;
 }
 .offer-name{
-	width: 299px;
+	width: 100%;
+	max-width: 299px;
 	margin-bottom: 15px;
 	padding-top: 40px;
 	font-family: 'MullerBold';
@@ -174,15 +180,18 @@ img{
 }
 
 /* карточка люкс номеров */
+.right-offer{
+	width: 200%;
+	max-width: 573px;
+}
 .special-offer-3{
-	width: 573px;
 	border-radius: 15px;
 	padding-left: 40px;
 	padding-bottom: 40px;
 	background: url(/img/c3lux.jpg) no-repeat center transparent;
 }
 .offer-name-right{
-	width: 299px;
+	max-width: 299px;
 	margin-bottom: 15px;
 	padding-top: 211px;
 	font-family: 'MullerBold';
@@ -213,7 +222,7 @@ img{
 	line-height: 40px;
 }
 .description{
-	width: 888px;
+	max-width: 888px;
 	line-height: 32px;
 }
 .block-about-us{
@@ -235,13 +244,13 @@ img{
 .list-services-1{
 	margin-right: 23px;
 	margin-bottom: 23px;
-	width: 573px;
+	width: calc((100% - 23px)/2);
 	height: 100%;
 	background: url(/img/услуги1.jpg) no-repeat top;
 	border-radius: 15px;
 }
 .list-services-2{
-	width: 573px;
+	width: calc((100% - 23px)/2);
 	height: 100%;
 	background: url(/img/услуги2.jpg) no-repeat top;
 	border-radius: 15px;
@@ -249,13 +258,13 @@ img{
 .list-services-3{
 	margin-right: 23px;
 	margin-bottom: 23px;
-	width: 573px;
+	width: calc((100% - 23px)/2);
 	height: 100%;
 	background: url(/img/услуги3.jpg) no-repeat top;
 	border-radius: 15px;
 }
 .list-services-4{
-	width: 573px;
+	width: calc((100% - 23px)/2);
 	height: 100%;
 	background: url(/img/услуги4.jpg) no-repeat top;
 	border-radius: 15px;
@@ -264,6 +273,7 @@ img{
 	margin-top: 165px;
 	padding-top: 25px;
 	padding-left: 45px;
+	padding-right: 45px;
 	padding-bottom: 50px;
 	background-color: #FFFFFF;
 }
@@ -276,7 +286,8 @@ img{
 	color: #CC9933;
 }
 .list-services-description{
-	width: 402px;
+	width: 100%;
+	max-width: 402px;
 	line-height: 32px;
 	color: #000000;
 }
@@ -299,14 +310,14 @@ img{
 .list-advantages-block{
 	margin-right: 23px;
 	margin-bottom: 23px;
-	width: 275px;
+	width: calc((100% - 69px) /4);
 	border-radius: 15px;
 	background-color: #FFFFFF;
 }
 /* создал отдельный класс так как не могу для каждого 4 списка отменить правый марджин */
 .list-advantages-block-notmargin{
 	margin-bottom: 23px;
-	width: 275px;
+	width: calc((100% - 69px) /4);
 	border-radius: 15px;
 	background-color: #FFFFFF;
 }
@@ -314,7 +325,8 @@ img{
 	padding-top: 106px;
 	padding-left: 45px;
 	padding-bottom: 41px;
-	width: 240px;
+	width: 100%;
+	max-width: 240px;
 	font-size: 16px;
 	line-height: 32px;
 	background: url(/img/п1.svg) no-repeat;
@@ -325,7 +337,8 @@ img{
 	padding-top: 106px;
 	padding-left: 45px;
 	padding-bottom: 41px;
-	width: 240px;
+	width: 100%;
+	max-width: 240px;
 	font-size: 16px;
 	line-height: 32px;
 	background: url(/img/п2.svg) no-repeat;
@@ -336,7 +349,8 @@ img{
 	padding-top: 106px;
 	padding-left: 45px;
 	padding-bottom: 41px;
-	width: 240px;
+	width: 100%;
+	max-width: 240px;
 	font-size: 16px;
 	line-height: 32px;
 	background: url(/img/п3.svg) no-repeat;
@@ -347,7 +361,8 @@ img{
 	padding-top: 106px;
 	padding-left: 45px;
 	padding-bottom: 41px;
-	width: 240px;
+	width: 100%;
+	max-width: 240px;
 	font-size: 16px;
 	line-height: 32px;
 	background: url(/img/п4.svg) no-repeat;
@@ -358,7 +373,8 @@ img{
 	padding-top: 106px;
 	padding-left: 45px;
 	padding-bottom: 41px;
-	width: 240px;
+	width: 100%;
+	max-width: 240px;
 	font-size: 16px;
 	line-height: 32px;
 	background: url(/img/п5.svg) no-repeat;
@@ -369,7 +385,8 @@ img{
 	padding-top: 106px;
 	padding-left: 45px;
 	padding-bottom: 41px;
-	width: 240px;
+	width: 100%;
+	max-width: 240px;
 	font-size: 16px;
 	line-height: 32px;
 	background: url(/img/п6.svg) no-repeat;
@@ -380,7 +397,8 @@ img{
 	padding-top: 106px;
 	padding-left: 45px;
 	padding-bottom: 41px;
-	width: 240px;
+	width: 100%;
+	max-width: 240px;
 	font-size: 16px;
 	line-height: 32px;
 	background: url(/img/п7.svg) no-repeat;
@@ -391,7 +409,8 @@ img{
 	padding-top: 106px;
 	padding-left: 45px;
 	padding-bottom: 41px;
-	width: 240px;
+	width: 100%;
+	max-width: 240px;
 	font-size: 16px;
 	line-height: 32px;
 	background: url(/img/п8.svg) no-repeat;
@@ -417,36 +436,48 @@ img{
 .list-placement-1{
 	margin-right: 23px;
 	margin-bottom: 23px;
-	width: 374px;
+	width: calc((100% - 46px)/3);
 	background-color: #FFFFFF;
+	border-radius: 15px 15px 0px 0px;
+}
+.picture{
+	border-radius: 15px 15px 0px 0px;
 }
 /* создал отдельный класс чтобы убрать правый марджин */
 .list-placement-right{
 	margin-bottom: 23px;
-	width: 374px;
+	width: calc((100% - 46px)/3);
 	background-color: #FFFFFF;
+	border-radius: 15px 15px 0px 0px;
 }
 /* создал отдельный класс чтобы убрать нижний марджин */
 .list-placement-bottom{
 	margin-right: 23px;
-	width: 374px;
+	width: calc((100% - 46px)/3);
 	background-color: #FFFFFF;
+	border-radius: 15px 15px 0px 0px;
 }
 .list-placement-price{
 	padding-left: 45px;
 	padding-top: 30px;
 	margin-bottom: 16px;
 }
+.placement-price{
+	font-size: 20px;
+	font-family: 'MullerBold';
+}
 .star{
 	padding-left: 44px;
 }
 .list-placement-name{
+	padding-right: 45px;
 	padding-left: 45px;
 	margin-bottom: 16px;
 	line-height: 16px;
 	color: #000000;
 }
 .list-placement-location{
+	padding-right: 45px;
 	padding-left: 45px;
 	margin-bottom: 20px;
 	line-height: 16px;
@@ -454,6 +485,7 @@ img{
 }
 .list-placement-btn{
 	margin-left: 45px;
+	margin-right: 45px;
 	margin-bottom: 34px;
 	padding: 15px 20px;
 	border-radius: 10px;
@@ -463,8 +495,9 @@ img{
 }
 .list-placement-options{
 	padding-top: 373px;
-	width: 373px;
-	height: 440px;
+	padding-bottom: 27px;
+	width: 120%;
+	max-width: 373px;
 	border-radius: 15px;
 	background: url(/img/р9.jpg) no-repeat transparent center;
 }
