@@ -134,7 +134,7 @@ img{
 	justify-content: space-between;
 }
 .block-offer{
-	margin-bottom: 190px;
+	margin-bottom: 69px;
 }
 
 /* карточки мальдивы и остров крит */
@@ -438,24 +438,24 @@ img{
 	margin-bottom: 23px;
 	width: calc((100% - 46px)/3);
 	background-color: #FFFFFF;
-	border-radius: 15px 15px 0px 0px;
-}
-.picture{
-	border-radius: 15px 15px 0px 0px;
+	border-radius: 15px;
+	overflow: hidden;
 }
 /* создал отдельный класс чтобы убрать правый марджин */
 .list-placement-right{
 	margin-bottom: 23px;
 	width: calc((100% - 46px)/3);
 	background-color: #FFFFFF;
-	border-radius: 15px 15px 0px 0px;
+	border-radius: 15px;
+	overflow: hidden;
 }
 /* создал отдельный класс чтобы убрать нижний марджин */
 .list-placement-bottom{
 	margin-right: 23px;
 	width: calc((100% - 46px)/3);
 	background-color: #FFFFFF;
-	border-radius: 15px 15px 0px 0px;
+	border-radius: 15px;
+	overflow: hidden;
 }
 .list-placement-price{
 	padding-left: 45px;
@@ -494,19 +494,321 @@ img{
 	color: #CC9933;
 }
 .list-placement-options{
-	padding-top: 373px;
-	padding-bottom: 27px;
-	width: 120%;
-	max-width: 373px;
+	height: 100%;
+	display: flex;
 	border-radius: 15px;
 	background: url(/img/р9.jpg) no-repeat transparent center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 40px;
 }
 .all-options{
-	padding-left: 54px;
 	padding-right: 20px;
 	font-size: 20px;
 	line-height: 40px;
 	font-family: 'MullerMedium';
 	color: #FFFFFF;
 	background: url(/img/р9стрел.svg) no-repeat transparent right;
+}
+.block-placement{
+	margin-bottom: 70px;
+}
+
+/* БЛОК ХОЧУ ТУР */
+
+
+.block-tour{
+	margin-bottom: 70px;
+}
+.conteiner-tour{
+background: #E9E9E9;
+border-radius: 15px;
+padding: 38px 46px 82px 43px;
+}
+.tour{
+	margin-left: 40px;
+	margin-bottom: 20px;
+	font-size: 40px;
+	line-height: 40px;
+}
+.form-tour{
+	background: #FFFFFF;
+	width: 100%;
+	max-width: 1080px;
+	border-radius: 15px;
+	padding: 32px 28px;
+}
+.form{
+	display: flex;
+}
+.description-tour1{
+	flex-direction: column;
+	margin-right: 20px;
+	font-size: 12px;
+	line-height: 12px;
+}
+.description-form1{
+	margin-top: 15px;
+	width: 100%;
+	max-width: 169px;
+	border: none;
+	font-size: 16px;
+	line-height: 16px;
+}
+.description-tour2{
+	flex-direction: column;
+	margin-right: 20px;
+	padding-left: 20px;
+	font-size: 12px;
+	line-height: 12px;
+	border-left: 1px solid #E1E1E1;
+}
+.description-form2{
+	margin-top: 15px;
+	margin-right: 20px;
+	width: 100%;
+	max-width: 169px;
+	border: none;
+	font-size: 16px;
+	line-height: 16px;
+}
+.description-tour3{
+	flex-direction: column;
+	margin-right: 20px;
+	padding-left: 20px;
+	font-size: 12px;
+	line-height: 12px;
+	border-left: 1px solid #E1E1E1;
+}
+.description-form3{
+	margin-top: 15px;
+	width: 100%;
+	max-width: 142px;
+	border: none;
+	font-size: 16px;
+	line-height: 16px;
+}
+.description-tour4{
+	flex-direction: column;
+	margin-right: 20px;
+	padding-left: 20px;
+	font-size: 12px;
+	line-height: 12px;
+	border-left: 1px solid #E1E1E1;
+}
+.description-form4{
+	margin-top: 15px;
+	margin-right: 20px;
+	width: 100%;
+	max-width: 121px;
+	border: none;
+	font-size: 16px;
+	line-height: 16px;
+}
+.description-tour5{
+	flex-direction: column;
+	margin-right: 30px;
+	padding-left: 20px;
+	font-size: 12px;
+	line-height: 12px;
+	border-left: 1px solid #E1E1E1;
+}
+.description-form5{
+	margin-top: 15px;
+	margin-right: 20px;
+	width: 100%;
+	max-width: 121px;
+	border: none;
+	font-size: 16px;
+	line-height: 16px;
+}
+.btn-tour{
+	padding: 13px 30px;
+	border: 1px solid #CC9933;
+	border-radius: 10px;
+	color: #CC9933;
+	background-color: #FFFFFF;
+}
+.btn-tour-border{
+	padding-left: 20px;
+	border-left: 1px solid #E1E1E1;
+}
+
+/* БЛОК КОНТАКТЫ */
+
+.block-contacts{
+	margin-bottom: 20px;
+}
+.contacts{
+	margin-left: 40px;
+	margin-bottom: 26px;
+	font-size: 40px;
+	line-height: 40px;
+}
+.common-contacts{
+	padding-top: 44px;
+	padding-right: 44px;
+	padding-bottom: 46px;
+	padding-left: 46px;
+	border-radius: 15px;
+	display: flex;
+	background: #FFFFFF;
+}
+.list-contacts{
+	display: flex;
+	flex-direction: column;
+}
+.description-contacts{
+	display: flex;
+	width: 100%;
+	max-width: 375px;
+	margin-bottom: 25px;
+	padding-bottom: 23px;
+	border-bottom: 1px solid #C4C4C4;
+}
+.description-contacts1{
+	display: flex;
+	width: 100%;
+	max-width: 375px;
+	margin-bottom: 45px;
+	padding-bottom: 23px;
+	border-bottom: 1px solid #C4C4C4;
+}
+.contacts-name{
+	width: 100%;
+	max-width: 98px;
+	margin-right: 47px;
+	font-size: 20px;
+	line-height: 20px;
+	font-family: 'MullerBold';
+}
+.address{
+	width: 100%;
+	max-width: 229px;
+	line-height: 24px;
+	font-style: normal;
+}
+.phone-contacts{
+	width: 100%;
+	max-width: 214px;
+	line-height: 24px;
+}
+.tel-contacts{
+	color: #CC9933;
+}
+.email-contacts{
+	width: 100%;
+	max-width: 280px;
+	line-height: 24px;
+}
+.mail-contacts{
+	color: #CC9933;
+}
+.description-mail{
+	color: #999999;
+}
+.schedule{
+	width: 100%;
+	max-width: 214px;
+	line-height: 24px;
+}
+.btn-contacts{
+	width: 100%;
+	max-width: 217px;
+	padding: 27px 29px 27px 29px;
+	border: 1px solid #CC9933;
+	border-radius: 10px;
+	line-height: 16px;
+	font-family: 'MullerBold';
+	color: #CC9933;
+	background: #FFFFFF;
+}
+.picture-contacts{
+	padding-left: 45px;
+}
+
+/* ФУТЕР */
+
+.footer{
+	margin-bottom: 20px;
+	border-radius: 15px;
+	width: 100%;
+	min-width: 1168px;
+	background-color: #333333;
+}
+.conteiner-footer{
+	display: flex;
+	background: url(/img/logofooter.png) no-repeat;
+	background-position-y: 113px;
+	background-position-x: 738px;
+	
+}
+.footer1{
+	margin: 44px 102px 55px 52px;
+	width: 30%;
+	min-width: 320px;
+}
+.info-footer1{
+	width: 50%;
+	min-width: 320px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #FFFFFF;
+	margin-bottom: 32px;
+}
+.info-footer2{
+	width: 50%;
+	min-width: 320px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #FFFFFF;
+	margin-bottom: 32px;
+}
+.info-footer3{
+	width: 50%;
+	min-width: 320px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #CC9933;
+}
+.footer2{
+	margin-top: 44px;
+	margin-right: 260px;
+	margin-bottom: 126px;
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	min-width: 358px;
+}
+.address-footer{
+	margin-bottom: 36px;
+	line-height: 16px;
+	color: #FFFFFF;
+	font-style: normal;
+}
+.tel-footer1{
+	margin-bottom: 5px;
+	color: #CC9933;
+}
+.tel-footer2{
+	margin-bottom: 36px;
+	color: #CC9933;
+}
+.mail-footer1{
+	margin-bottom: 5px;
+	color: #CC9933;
+}
+.mail-footer2{
+	color: #CC9933;
+}
+.social-network{
+	margin-top: 44px;
+	margin-right: 51px;
+	margin-bottom: 92px;
+	display: flex;
+	flex-direction: column;
+}
+.social:not(:last-child){
+	margin-bottom: 20px;
 }
