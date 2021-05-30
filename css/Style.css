@@ -56,6 +56,11 @@ ul{
 img{
 	max-width: 100%;
 }
+button{
+	border: 1px solid #CC9933;
+	color: #CC9933;
+	background-color: #FFFFFF;
+}
 .nav-header{
 	display: flex;
 	align-items: center;
@@ -69,6 +74,10 @@ img{
 	font-family: 'MullerMedium';
 	font-size: 20px;
 	line-height: 20px;
+	transition: color .3s ease-in-out
+}
+.nav-header-left:hover{
+	color: #CC9933;
 }
 .nav-header-right{
 	background: url(/img/личныйкабинет.svg) no-repeat left center transparent;
@@ -105,6 +114,10 @@ img{
 .nav-info{
 	color: #666666;
 }
+.nav-info:hover{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #CC9933;
+}
 .nav-list-right{
 	display: flex;
 	padding-top: 13px;
@@ -116,9 +129,12 @@ img{
 	margin-bottom: 10px;
 	padding: 13px 20px;
 	border-radius: 10px;
-	border: 1px solid #CC9933;
-	color: #CC9933;
-	background-color: #FFFFFF;
+	transition: border, background, color, .5s ease-in-out;
+}
+.list-right:hover{
+	border: 1px solid #666666;
+	color: #666666;
+	background-color: #e5e5e5;
 }
 
 /* БЛОК СПЕЦПРЕДЛОЖЕНИЙ */
@@ -145,7 +161,7 @@ img{
 	padding-left: 40px;
 	padding-bottom: 40px;
 	margin-bottom: 23px;
-	background: url(/img/c1maldiv.jpg) no-repeat center transparent;
+	background: linear-gradient( to right, #304059, transparent 84%), url(/img/c1maldiv.jpg) no-repeat center;
 }
 .special-offer-2{
 	width: 200%;
@@ -153,7 +169,7 @@ img{
 	border-radius: 15px;
 	padding-left: 40px;
 	padding-bottom: 40px;
-	background: url(/img/c2krit.jpg) no-repeat center transparent;
+	background: linear-gradient( to right, #304059, transparent 84%), url(/img/c2krit.jpg) no-repeat center;
 }
 .offer-name{
 	width: 100%;
@@ -177,6 +193,10 @@ img{
 	color: #FFCC66;
 	background: url(/img/стрелподроб.svg) no-repeat right center transparent;
 	padding-right: 15px;
+	transition: font-size .3s ease-in-out;
+}
+.offer-detailed:hover{
+	font-size: 18px;
 }
 
 /* карточка люкс номеров */
@@ -188,7 +208,7 @@ img{
 	border-radius: 15px;
 	padding-left: 40px;
 	padding-bottom: 40px;
-	background: url(/img/c3lux.jpg) no-repeat center transparent;
+	background: linear-gradient( to top, #304059, transparent 84%), url(/img/c3lux.jpg) no-repeat center;
 }
 .offer-name-right{
 	max-width: 299px;
@@ -211,6 +231,10 @@ img{
 	color: #FFCC66;
 	background: url(/img/стрелподроб.svg) no-repeat right center transparent;
 	padding-right: 15px;
+	transition: font-size .3s ease-in-out;
+}
+.offer-detailed-right:hover{
+	font-size: 18px;
 }
 
 /* БЛОК О НАС */
@@ -284,6 +308,10 @@ img{
 	background: url(/img/стрелуслуги.svg) no-repeat right center transparent;
 	padding-right: 15px;
 	color: #CC9933;
+	transition: font-size .3s ease-in-out;
+}
+.list-services-name:hover{
+	font-size: 22px;
 }
 .list-services-description{
 	width: 100%;
@@ -308,18 +336,14 @@ img{
 	flex-wrap: wrap;
 }
 .list-advantages-block{
-	margin-right: 23px;
 	margin-bottom: 23px;
 	width: calc((100% - 69px) /4);
 	border-radius: 15px;
 	background-color: #FFFFFF;
 }
 /* создал отдельный класс так как не могу для каждого 4 списка отменить правый марджин */
-.list-advantages-block-notmargin{
-	margin-bottom: 23px;
-	width: calc((100% - 69px) /4);
-	border-radius: 15px;
-	background-color: #FFFFFF;
+.list-advantages-block-notmargin:not(:nth-child(4n)){
+	margin-right: 23px;
 }
 .advantages-description-1{
 	padding-top: 106px;
@@ -489,27 +513,46 @@ img{
 	margin-bottom: 34px;
 	padding: 15px 20px;
 	border-radius: 10px;
-	border: 1px solid #CC9933;
-	background-color: #FFFFFF;
-	color: #CC9933;
+	transition: border, background, color, .5s ease-in-out;
+}
+.list-placement-btn:hover{
+	border: 1px solid #666666;
+	color: #666666;
+	background-color: #e5e5e5;
 }
 .list-placement-options{
+	width: 400px;
+	max-width: 373px;
 	height: 100%;
+	max-height: 440px;
+	object-fit: contain;
 	display: flex;
 	border-radius: 15px;
-	background: url(/img/р9.jpg) no-repeat transparent center;
+	background: linear-gradient( to top, #304059, transparent 84%), url(/img/р9.jpg) no-repeat center;
 	flex-direction: column;
-	align-items: center;
 	justify-content: flex-end;
-	padding: 40px;
 }
 .all-options{
-	padding-right: 20px;
+	padding-left: 50px;
+	padding-bottom: 27px;
 	font-size: 20px;
 	line-height: 40px;
+	display: block;
 	font-family: 'MullerMedium';
 	color: #FFFFFF;
 	background: url(/img/р9стрел.svg) no-repeat transparent right;
+	background-position-x: 305px;
+	background-position-y: 384px;
+	transition: color .3s ease-in-out;
+}
+.all-options::before{
+	content: '';
+	display: block;
+	margin-top: 373px;
+	margin-left: 54px;
+}
+.all-options:hover{
+	color: #CC9933;
 }
 .block-placement{
 	margin-bottom: 70px;
@@ -548,6 +591,9 @@ padding: 38px 46px 82px 43px;
 	font-size: 12px;
 	line-height: 12px;
 }
+.description-tour1:hover{
+	border-bottom: 2px solid #CC9933;
+}
 .description-form1{
 	margin-top: 15px;
 	width: 100%;
@@ -563,6 +609,9 @@ padding: 38px 46px 82px 43px;
 	font-size: 12px;
 	line-height: 12px;
 	border-left: 1px solid #E1E1E1;
+}
+.description-tour2:hover{
+	border-bottom: 2px solid #CC9933;
 }
 .description-form2{
 	margin-top: 15px;
@@ -581,6 +630,9 @@ padding: 38px 46px 82px 43px;
 	line-height: 12px;
 	border-left: 1px solid #E1E1E1;
 }
+.description-tour3:hover{
+	border-bottom: 2px solid #CC9933;
+}
 .description-form3{
 	margin-top: 15px;
 	width: 100%;
@@ -596,6 +648,9 @@ padding: 38px 46px 82px 43px;
 	font-size: 12px;
 	line-height: 12px;
 	border-left: 1px solid #E1E1E1;
+}
+.description-tour4:hover{
+	border-bottom: 2px solid #CC9933;
 }
 .description-form4{
 	margin-top: 15px;
@@ -614,6 +669,9 @@ padding: 38px 46px 82px 43px;
 	line-height: 12px;
 	border-left: 1px solid #E1E1E1;
 }
+.description-tour5:hover{
+	border-bottom: 2px solid #CC9933;
+}
 .description-form5{
 	margin-top: 15px;
 	margin-right: 20px;
@@ -625,10 +683,13 @@ padding: 38px 46px 82px 43px;
 }
 .btn-tour{
 	padding: 13px 30px;
-	border: 1px solid #CC9933;
 	border-radius: 10px;
-	color: #CC9933;
-	background-color: #FFFFFF;
+	transition: border, background, color, .5s ease-in-out;
+}
+.btn-tour:hover{
+	border: 1px solid #666666;
+	color: #666666;
+	background-color: #e5e5e5;
 }
 .btn-tour-border{
 	padding-left: 20px;
@@ -717,12 +778,15 @@ padding: 38px 46px 82px 43px;
 	width: 100%;
 	max-width: 217px;
 	padding: 27px 29px 27px 29px;
-	border: 1px solid #CC9933;
 	border-radius: 10px;
 	line-height: 16px;
 	font-family: 'MullerBold';
-	color: #CC9933;
-	background: #FFFFFF;
+	transition: border, background, color, .5s ease-in-out;
+}
+.btn-contacts:hover{
+	border: 1px solid #666666;
+	color: #666666;
+	background-color: #e5e5e5;
 }
 .picture-contacts{
 	padding-left: 45px;
