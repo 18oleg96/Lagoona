@@ -48,6 +48,7 @@
 }
 a{
 	text-decoration: none;
+	color: #CC9933;
 }
 ul{
 	list-style: none;
@@ -84,7 +85,6 @@ button{
 	background: url(/img/личныйкабинет.svg) no-repeat left center transparent;
 	background-position-y: -4px;
 	padding-left: 30px;
-	color: #CC9933;
 	line-height: 16px;
 }
 .container-header{
@@ -308,7 +308,6 @@ button{
 	font-weight: 500;
 	background: url(/img/стрелуслуги.svg) no-repeat right center transparent;
 	padding-right: 15px;
-	color: #CC9933;
 	transition: font-size .3s ease-in-out;
 }
 .list-services-name:hover{
@@ -758,16 +757,10 @@ padding: 38px 46px 82px 43px;
 	max-width: 214px;
 	line-height: 24px;
 }
-.tel-contacts{
-	color: #CC9933;
-}
 .email-contacts{
 	width: 100%;
 	max-width: 280px;
 	line-height: 24px;
-}
-.mail-contacts{
-	color: #CC9933;
 }
 .description-mail{
 	color: #999999;
@@ -837,7 +830,6 @@ padding: 38px 46px 82px 43px;
 	min-width: 320px;
 	font-size: 16px;
 	line-height: 30px;
-	color: #CC9933;
 }
 .footer2{
 	margin-right: 260px;
@@ -854,18 +846,12 @@ padding: 38px 46px 82px 43px;
 }
 .tel-footer1{
 	margin-bottom: 5px;
-	color: #CC9933;
 }
 .tel-footer2{
 	margin-bottom: 36px;
-	color: #CC9933;
 }
 .mail-footer1{
 	margin-bottom: 5px;
-	color: #CC9933;
-}
-.mail-footer2{
-	color: #CC9933;
 }
 .social-network{
 	display: flex;
