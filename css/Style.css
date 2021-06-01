@@ -50,6 +50,9 @@ a{
 	text-decoration: none;
 	color: #CC9933;
 }
+h2{
+	color: #333333;
+}
 ul{
 	list-style: none;
 	margin: 0;
@@ -317,7 +320,6 @@ button{
 	width: 100%;
 	max-width: 402px;
 	line-height: 32px;
-	color: #000000;
 }
 .block-services{
 	margin-bottom: 45px;
@@ -498,7 +500,6 @@ button{
 	padding-left: 45px;
 	margin-bottom: 16px;
 	line-height: 16px;
-	color: #000000;
 }
 .list-placement-location{
 	padding-right: 45px;
